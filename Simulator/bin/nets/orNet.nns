@@ -1,0 +1,30 @@
+Network:
+nrid 0
+neur INPUT
+xpos 201
+ypos 202
+inpu 1
+acti 0
+thrd 0
+actf BIN_TH
+conn 2
+wght 1
+nrid 1
+neur INPUT
+xpos 212
+ypos 515
+inpu 0
+acti 0
+thrd 0
+actf BIN_TH
+conn 2
+wght 1
+nrid 2
+neur OUTPUT
+xpos 854
+ypos 372
+inpu 0
+acti 0
+thrd 0,5
+actf BIN_TH
+:Network

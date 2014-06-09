@@ -1,0 +1,33 @@
+Lessons:
+nptr 4
+nptn Muster 0
+nptn Muster 1
+nptn Muster 2
+nptn Muster 3
+numi 3
+nset 2
+niid 0
+ninp 1
+niid 1
+ninp 1
+nsid 3
+nout 0
+niid 0
+ninp 0
+niid 1
+ninp 0
+nsid 3
+nout 0
+niid 0
+ninp 1
+niid 1
+ninp 0
+nsid 3
+nout 1
+niid 0
+ninp 0
+niid 1
+ninp 1
+nsid 3
+nout 1
+:Lessons

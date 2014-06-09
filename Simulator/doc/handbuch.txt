@@ -1,0 +1,99 @@
+ANNSi Handbuch:
+
+Dieses Handbuch erfordert das Wissen darum, was ein künstliches neuronales 
+Netz ist und wozu es gebraucht wird.
+Wenn Sie das nicht wissen, informieren Sie sich darüber bitte bei Wikipedia
+oder in userem zweisprachigen Forum: http://board.badworld-crew.com
+
+Inhalt:
+
+1 Neuronen
+	1.1 Neuronentypen
+	1.2 Aktivierungsfunktionen
+	1.3 Verbindungen
+
+2 Netz
+	2.1 Netzeditor
+		2.1.1 Lerneditor
+		2.1.2 Grafikmapper
+		2.1.3 Lernen
+		2.1.4 Durchlauf
+
+1 - Neuronen:
+_____________
+
+Neuronen sind der kleinste Bestandteil eines neuronalen Netzes.
+Sie besitzen eine Aktivierungsfunktion, einen Eingabewert und 
+sind durch Verbindungen mit anderen Neuronen vernetzt.
+
+1.1 Neuronentypen:
+		
+	Es gibt 3 verschiedene Arten von Neuronen:
+	
+		Eingabe oder Input Neuronen:
+		Diese Neuronenart nimmt die Eingabe des Benutzers entgegen und gibt
+		sie nach bestimmten Kriterien an die Versteckte oder Mittlere Schicht weiter.
+		
+		Mittlere oder Versteckte (Hidden) Neuronen:
+		Die Neuronen der Mittleren Schicht werden auch versteckt genannt, da sie nach
+		aussen hin nicht sichtbar sind. Der Benutzer interagiert nur mit Eingabe und 
+		Ausgabe Neuronen, welche wiederum mit den Mittleren kommunizieren.
+		
+		Ausgabe Neuronen:
+		Diese Neuronenart liefert die Resultate einer Auswertungs-Session.
+		
+1.2 Aktivierungsfunktionen:
+
+	Die Aktivierungsfunktion gibt an, nach welcher Art und Weise entschieden wird,
+	ob das Neuron "feuert", also aktiviert wird.
+	
+1.3 Verbindungen:
+
+	Verbindungen sorgen für die Kommunikation der Neuronen untereinander.
+	Sie haben ein Gewicht, das mit dem Eingabewert der Verbindung multipliziert
+	und dann an das Empfänger-Neuron weitergegeben wird.
+		
+2 Netz:
+
+2.1 Netzeditor
+
+	Der Netzeditor ermöglicht das Bearbeiten des Lernmaterials, d.h. welche Ausgabe
+	Neuronen sollen bei welchen Werten der Eingabe Neuronen welchen Wert haben.
+	
+	2.1.1 Lerneditor:
+	
+	Die linke Tabelle zeigt alle Eingabe Neuronen und ihre Eingabewerte, die mittlere
+	Tabelle zeigt die IST-Werte der Ausgabe Neuronen und die rechte Tabelle die SOLL
+	Werte der Ausgabe Neuronen.
+	Am rechten Rand befindet sich der Muster Manager.
+	Um ein neues Lernmuster hinzuzufügen, klicken Sie auf Hinzufügen und dann auf das 
+	Muster. Nun können Sie entweder die Werte der Eingabeneuronen selbst eintragen oder
+	Sie verwenden z.b. den Grafikmapper stattdessen.
+	Nun noch die Soll Werte eingeben und mit "Ändern" bestätigen.
+	
+	2.1.2 Grafikmapper:
+	
+	Wenn Sie einen Buchstaben oder eine Zahl einem Eingabe Netz zuweisen wollen,
+	dann klicken Sie ein Muster an, wählen Sie den Grafikmapper und geben Sie die Ausdehnung
+	des Raster Feldes an. Wenn Sie ein 8 mal 8 Eingabeneuronen Feld erstellt haben, so setzen
+	Sie die Ausdehnung auf 8 mal 8.
+	Anschließend muss ein Muster in das linke weise Feld gezeichnet werden und auf "Rasterisieren"
+	geklickt werden. Sobald der Rastervorgang abgeschlossen ist, klicken Sie unten auf "Abbilden auf
+	Eingabe" und wechseln Sie zurück zum Lerneditor. Dort noch die Soll-Werte rechts einstellen und
+	mit "Ändern" bestätigen.
+	
+	2.1.3 Lernen:
+	
+	Sobald Sie die Lernmuster fertig gestellt haben, klicken Sie auf Trainieren und warten Sie, bis der
+	Vorgang abgeschlossen wurde. Rechts unten sehen Sie die Anzahl der bisherigen Versuche, das Netz zu
+	verbessern. Die Zeit wird nach Fertigstellung des Lernvorgangs angezeigt.
+	Um eine Höchstgrenze der Iterationen zu setzen, ändern Sie vor dem Lernen das Feld mit dem Inhalt "0"
+	auf einen beliebigen Wert größer Null.
+	
+	2.1.4 Durchlauf:
+	
+	Sobald Ihr Netz fertig gelernt wurde, können Sie neue Testmuster hinzufügen und entweder mit dem Grafikmapper
+	oder dem Lerneditor Eingabewerte zuweisen. Dann wieder mit Ändern bestätigen und auf "Durchlauf" klicken.
+	Nach Sekundenbruchteilen sollten Sie die ermittelten IST-Werte der Ausgabeneuronen erkennen (Mittlere Tabelle)
+	und können Ihren Test anhand der Ergebnisse bewerten. Wenn er nicht zufriedenstellend ausgefallen ist, ändern Sie
+	die Art der Muster, ihre Anzahl oder die Netz Topologie.
